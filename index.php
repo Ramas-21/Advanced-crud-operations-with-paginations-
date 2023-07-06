@@ -15,7 +15,7 @@
         <div class="col-10">
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <span class="input-group-text bg-dark"><i class="fa fa-search text-light"></i></span>
+                    <span class="input-group-text bg-dark"><i class="fas fa-search text-light"></i></span>
                 </div>
             </div>
         </div>
