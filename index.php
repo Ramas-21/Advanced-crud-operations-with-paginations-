@@ -18,6 +18,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text bg-dark"><i class="fas fa-search text-light"></i></span>
                     </div>
+                    <input type="text" class="form-control" placeholder="search user">
                 </div>
             </div>
         </div>
