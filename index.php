@@ -19,12 +19,12 @@
                         <span class="input-group-text bg-dark"><i class="fas fa-search text-light"></i></span>
                     </div>
                     <input type="text" class="form-control" placeholder="search user">
-                    <div class="col-2">
-                        <button class="btn btn-dark ml-3">
-                            Add new User
-                        </button>
-                    </div>
                 </div>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#userModal">
+                    Add new User
+                </button>
             </div>
         </div>
     </div>
