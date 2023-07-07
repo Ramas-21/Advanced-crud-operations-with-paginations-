@@ -12,7 +12,7 @@
 <body>
     <h1 class="bg-dark text-light text-center py-2">PHP advanced CRUD</h1>
     <div class="container">
-        <div class="modal fade" id="#userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
