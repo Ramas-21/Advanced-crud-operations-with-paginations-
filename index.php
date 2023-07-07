@@ -39,13 +39,12 @@
                 </div>
             </div>
             <div class="col-2">
-                <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#userModal">
-                    Add new User
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#userModal">
+                    Add User
                 </button>
             </div>
         </div>
     </div>
-
 
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
