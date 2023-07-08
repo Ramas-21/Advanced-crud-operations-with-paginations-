@@ -19,31 +19,40 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Adding or Updating Users</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
+                    <form id="addForm" method="POST" enctype="multipart/form-data">
+                        <div class="modal-body">
+                            <label for="name">Name</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-dark"><i class="fas fa-user-alt"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Enter your username" autocomplete="off" required="required" id="username">
+                            </div>
+                        </div>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                </form>
             </div>
         </div>
-        <div class="row">
-            <div class="col-10">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text bg-dark"><i class="fas fa-search text-light"></i></span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="search user">
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-dark"><i class="fas fa-search text-light"></i></span>
                 </div>
-            </div>
-            <div class="col-2">
-                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#userModal">
-                    Add User
-                </button>
+                <input type="text" class="form-control" placeholder="search user">
             </div>
         </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#userModal">
+                Add User
+            </button>
+        </div>
+    </div>
     </div>
 
 
