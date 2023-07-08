@@ -67,23 +67,50 @@
                 </form>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-10">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-dark"><i class="fas fa-search text-light"></i></span>
+
+        <div class="row mb-3">
+            <div class="col-10">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-dark"><i class="fas fa-search text-light"></i></span>
+                    </div>
+                    &nbsp&nbsp
+                    <input type="text" class="form-control" placeholder="search user">
                 </div>
-                &nbsp&nbsp
-                <input type="text" class="form-control" placeholder="search user">
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#userModal">
+                    Add User
+                </button>
             </div>
         </div>
-        <div class="col-2">
-            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#userModal">
-                Add User
-            </button>
-        </div>
     </div>
+    <!--------table -------->
+    <div class="container">
+        <table class="table" id="userTable">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Operation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Picture 1</th>
+                    <td>Lawrence</td>
+                    <td>lawrence@gmail.com</td>
+                    <td>0716795223</td>
+                    <td>
+                        <span>Edit</span>
+                        <span>Profile</span>
+                        <span>Delete</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 
