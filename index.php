@@ -26,14 +26,14 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text bg-dark"><i class="fas fa-user-alt text-light"></i></span>
                                 </div>
-                                &nbsp&nbsp
+                                &nbsp;
                                 <input type="text" class="form-control" placeholder="Enter your username" autocomplete="off" required="required" id="username">
                             </div>
                         </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-dark">Submit</button>
+                        </div>
                 </div>
                 </form>
             </div>
