@@ -28,7 +28,7 @@
                                         <span class="input-group-text bg-dark"><i class="fas fa-user-alt text-light"></i></span>
                                     </div>
                                     &nbsp;
-                                    <input type="text" class="form-control" placeholder="Enter your username" autocomplete="off" required="required" id="username">
+                                    <input type="text" class="form-control" placeholder="Enter your username" autocomplete="off" required="required" id="username" name="username">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -38,7 +38,7 @@
                                         <span class="input-group-text bg-dark"><i class="fas fa-envelope-open text-light"></i></span>
                                     </div>
                                     &nbsp;
-                                    <input type="email" class="form-control" placeholder="Enter your email" autocomplete="off" required="required" id="email">
+                                    <input type="email" class="form-control" placeholder="Enter your email" autocomplete="off" required="required" id="email" name="email">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -48,7 +48,7 @@
                                         <span class="input-group-text bg-dark"><i class="fas fa-phone text-light"></i></span>
                                     </div>
                                     &nbsp;
-                                    <input type="text" class="form-control" placeholder="Enter your mobile" autocomplete="off" required="required" id="mobile">
+                                    <input type="text" class="form-control" placeholder="Enter your mobile" autocomplete="off" required="required" id="mobile" name="mobile" maxlength="10" minlength="10">
                                 </div>
                             </div>
                             <div class="form-group">
