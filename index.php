@@ -24,8 +24,9 @@
                             <label for="name">Name</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text bg-dark"><i class="fas fa-user-alt"></i></span>
+                                    <span class="input-group-text bg-dark"><i class="fas fa-user-alt text-light"></i></span>
                                 </div>
+                                &nbsp&nbsp
                                 <input type="text" class="form-control" placeholder="Enter your username" autocomplete="off" required="required" id="username">
                             </div>
                         </div>
@@ -44,6 +45,7 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text bg-dark"><i class="fas fa-search text-light"></i></span>
                 </div>
+                &nbsp&nbsp
                 <input type="text" class="form-control" placeholder="search user">
             </div>
         </div>
