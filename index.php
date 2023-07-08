@@ -16,18 +16,47 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Adding or Updating Users</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Users</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <form id="addForm" method="POST" enctype="multipart/form-data">
                         <div class="modal-body">
-                            <label for="name">Name</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-dark"><i class="fas fa-user-alt text-light"></i></span>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-dark"><i class="fas fa-user-alt text-light"></i></span>
+                                    </div>
+                                    &nbsp;
+                                    <input type="text" class="form-control" placeholder="Enter your username" autocomplete="off" required="required" id="username">
                                 </div>
-                                &nbsp;
-                                <input type="text" class="form-control" placeholder="Enter your username" autocomplete="off" required="required" id="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Email:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-dark"><i class="fas fa-envelope-open text-light"></i></span>
+                                    </div>
+                                    &nbsp;
+                                    <input type="email" class="form-control" placeholder="Enter your email" autocomplete="off" required="required" id="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Mobile:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-dark"><i class="fas fa-phone text-light"></i></span>
+                                    </div>
+                                    &nbsp;
+                                    <input type="text" class="form-control" placeholder="Enter your mobile" autocomplete="off" required="required" id="mobile">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Photo:</label>
+                                <div class="input-group">
+                                    <label class="custom-file-label" for="userPhoto"></label>
+                                    <input type="file" class=" form-control custom-file-input" name="photo" id="userPhoto">
+                                </div>
                             </div>
                         </div>
                         <div class="modal-footer">
