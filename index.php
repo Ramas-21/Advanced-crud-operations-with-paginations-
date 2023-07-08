@@ -94,7 +94,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Phone</th>
-                    <th scope="col">Operation</th>
+                    <th scope="col">Operations</th>
                 </tr>
             </thead>
             <tbody>
