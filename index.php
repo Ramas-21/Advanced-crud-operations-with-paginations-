@@ -1,3 +1,11 @@
+<!--<?php
+
+require_once 'partials/connect.php';
+$dbObject = new Database;
+var_dump($dbObject);
+?> --->
+
+
 <!doctype html>
 <html lang="en">
 
