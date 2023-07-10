@@ -113,9 +113,9 @@ var_dump($dbObject);
                     <td>lawrence@gmail.com</td>
                     <td>0716795223</td>
                     <td>
-                        <a href="#" class="mr-4 profile" data-bs-target="#userViewModal" data-bs-toggle="modal"><i class="fas fa-eye"></i></a>
-                        <a href="#" class="mr-4 editUser"><i class="fas fa-edit"></i></a>
-                        <a href="#" class="mr-4 deleteUser"><i class="fas fa-trash-alt"></i></a>
+                        <a href="#" class="mr-4 profile" data-bs-target="#userViewModal" data-bs-toggle="modal"><i class="fas fa-eye text-info"></i></a>
+                        <a href="#" class="mr-4 editUser"><i class="fas fa-edit text-success"></i></a>
+                        <a href="#" class="mr-4 deleteUser"><i class="fas fa-trash-alt text-danger"></i></a>
                     </td>
                 </tr>
             </tbody>
