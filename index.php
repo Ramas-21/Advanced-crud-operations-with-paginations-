@@ -18,6 +18,7 @@ var_dump($dbObject);
 </head>
 
 <body>
+    <?php include 'profile.php'?>
     <h1 class="bg-dark text-light text-center py-2">PHP advanced CRUD</h1>
     <div class="container">
         <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -112,9 +113,9 @@ var_dump($dbObject);
                     <td>lawrence@gmail.com</td>
                     <td>0716795223</td>
                     <td>
-                        <a href="#" class="mr-3 profile" data-bs-target="#userViewModal" data-bs-toggle="modal"><i class="fas fa-eye"></i></a>
-                        <a href="#" class="mr-3 editUser"><i class="fas fa-edit"></i></a>
-                        <a href="#" class="mr-3 deleteUser"><i class="fas fa-trash-alt"></i></a>
+                        <a href="#" class="mr-4 profile" data-bs-target="#userViewModal" data-bs-toggle="modal"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="mr-4 editUser"><i class="fas fa-edit"></i></a>
+                        <a href="#" class="mr-4 deleteUser"><i class="fas fa-trash-alt"></i></a>
                     </td>
                 </tr>
             </tbody>
