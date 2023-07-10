@@ -112,9 +112,9 @@ var_dump($dbObject);
                     <td>lawrence@gmail.com</td>
                     <td>0716795223</td>
                     <td>
-                        <span>Edit</span>
-                        <span>Profile</span>
-                        <span>Delete</span>
+                        <a href="#" class="mr-3 profile" data-bs-target="#userViewModal" data-bs-toggle="modal"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="mr-3 editUser"><i class="fas fa-edit"></i></a>
+                        <a href="#" class="mr-3 deleteUser"><i class="fas fa-trash-alt"></i></a>
                     </td>
                 </tr>
             </tbody>
