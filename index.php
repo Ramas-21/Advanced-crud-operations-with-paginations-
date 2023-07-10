@@ -114,7 +114,7 @@ var_dump($dbObject);
                     <td>0716795223</td>
                     <td>
                         <a href="#" class="mr-4 profile" data-bs-target="#userViewModal" data-bs-toggle="modal" title="View profile"><i class="fas fa-eye text-success"></i></a>
-                        <a href="#" class="mr-4 editUser"><i class="fas fa-edit text-info" title="Edit"></i></a>
+                        <a href="#" class="mr-4 editUser"><i class="fas fa-edit text-info" title="Edit" data-bs-target="#userModal" data-bs-toggle="modal"></i></a>
                         <a href="#" class="mr-4 deleteUser"><i class="fas fa-trash-alt text-danger" title="Delete"></i></a>
                     </td>
                 </tr>
