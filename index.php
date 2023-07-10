@@ -108,7 +108,7 @@ var_dump($dbObject);
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">Picture 1</th>
+                    <td scope="row">Picture 1</td>
                     <td>Lawrence</td>
                     <td>lawrence@gmail.com</td>
                     <td>0716795223</td>
