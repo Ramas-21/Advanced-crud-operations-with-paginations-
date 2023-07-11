@@ -29,6 +29,11 @@ class User extends Database {
             $this->conn->rollback();
         }
     }
+
+    // function to get rows
+    public function getRows($start=0,$limit=4){
+        $sql="SELECT * FROM {$this->tableName} ORDER BY DESC LIMIT {$start},{$limit}";
+    }
 }
 
 ?>
