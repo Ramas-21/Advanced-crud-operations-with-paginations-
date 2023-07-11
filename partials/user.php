@@ -15,6 +15,19 @@ class User extends Database {
         }
         // $sql="INSERT INTO {$this->tableName} (pname,email,phone) VALUES(:pname,:email,:phone)";
         $sql="INSERT INTO {$this->tableName} (". implode(',', $fields).") VALUES (". implode(',',$placeholder).")";
+
+        // SQL INJECTIONS
+        $stmt = $this->conn->prepare($sql);
+        try{
+            $this->conn->beginTransaction();
+            $stmt->execute($data);
+            $lastInsertedId=$this->conn->lastInsertId();
+            $this->conn->commit();
+            return $lastInsertedId;
+        }catch(PDOException $e){
+            echo "Error:".$e->getMessage();
+            $this->conn->rollback();
+        }
     }
 }
 
