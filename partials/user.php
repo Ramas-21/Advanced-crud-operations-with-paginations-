@@ -35,6 +35,12 @@ class User extends Database {
         $sql = "SELECT * FROM {$this->tableName} ORDER BY DESC LIMIT {$start},{$limit}";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
+        if($stmt->rowCount()>0){
+            $results=$stmt->fetchAll(PDO::FETCH_ASSOC);
+        }else{
+            $results=[];
+        }
+        return $results;
     }
 }
 
