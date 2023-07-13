@@ -32,7 +32,7 @@ class User extends Database {
 
     // function to get rows
     public function getRows($start=0,$limit=4){
-        $sql = "SELECT * FROM {$this->tableName} ORDER BY DESC LIMIT {$start},{$limit}";
+        $sql = "SELECT * FROM {$this->tableName} ORDER BY name DESC LIMIT {$start},{$limit}";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
         if($stmt->rowCount() > 0){
