@@ -1,9 +1,9 @@
 <!--<?php
 
-require_once 'partials/connect.php';
-$dbObject = new Database;
-var_dump($dbObject);
-?> --->
+    require_once 'partials/connect.php';
+    $dbObject = new Database;
+    var_dump($dbObject);
+    ?> --->
 
 
 <!doctype html>
@@ -18,7 +18,7 @@ var_dump($dbObject);
 </head>
 
 <body>
-    <?php include 'profile.php'?>
+    <?php include 'profile.php' ?>
     <h1 class="bg-dark text-light text-center py-2">PHP advanced CRUD</h1>
     <div class="container">
         <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -73,7 +73,7 @@ var_dump($dbObject);
                             <button type="button" class="btn btn-dark">Submit</button>
 
                             <!-------- 2 input fields for adding and for updating or viewing profile ----->
-                            <input type="hidden" name="action" value=""addUser>
+                            <input type="hidden" name="action" value="" addUser>
                             <input type="hidden" name="userId" id="userId" value="">
 
                         </div>
@@ -141,6 +141,8 @@ var_dump($dbObject);
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
