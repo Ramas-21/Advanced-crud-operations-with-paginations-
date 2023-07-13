@@ -71,6 +71,11 @@ var_dump($dbObject);
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-dark">Submit</button>
+
+                            <!-------- 2 input fields for adding and for updating or viewing profile ----->
+                            <input type="hidden" name="action" value=""addUser>
+                            <input type="hidden" name="userId" id="userId" value="">
+
                         </div>
                 </div>
                 </form>
