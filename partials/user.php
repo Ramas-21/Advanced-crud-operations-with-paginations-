@@ -42,6 +42,17 @@ class User extends Database {
         }
         return $results;
     }
-}
 
-?>
+    // function to get single row
+    public function getRow($field,$value){
+        $sql = "SELECT * FROM {$this->tableName} WHERE {$field}=:{$field}";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        if($stmt->rowCount() > 0){
+            $result=$stmt->fetch(PDO::FETCH_ASSOC);
+        } else {
+            $result=[];
+        }
+        return $result;
+    }
+}
