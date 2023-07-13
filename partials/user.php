@@ -65,5 +65,25 @@ class User extends Database {
 
         return $result['pcount'];
     }
+
+    // function to upload image
+    public function uploadPhoto($file){
+        if(!empty($file)){
+            $path = $file['temporary_name'];
+            $fileName = $file['name'];
+            $fileType = $file['type'];
+            $fileNameCmps = explode('.',$fileName);
+            $fileExtension = strtolower(end($fileNameCmps));
+            $newFileName = md5(time().$fileName) . '.' . $fileExtension;
+            $allowedExtension = ["png","jpg","jpeg"];
+
+            if(in_array($fileExtension,$allowedExtension)){
+                $uploadFileDir = getcwd().'/uploads/';
+                $destinationFilePath = $uploadFileDir . $newFileName;
+                if(move_uploaded_file($path,$destinationFilePath)){
+                    return $newFileName;
+                }
+            }
+        }
+    }
 }
-?>
