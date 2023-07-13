@@ -55,4 +55,15 @@ class User extends Database {
         }
         return $result;
     }
+
+    // function to count number of rows
+    public function getCount(){
+        $sql = "SELECT count(*) as pcount FROM {$this->tableName}";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        $result=$stmt->fetch(PDO::FETCH_ASSOC);
+
+        return $result['pcount'];
+    }
 }
+?>
