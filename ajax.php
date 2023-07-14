@@ -35,6 +35,9 @@ if($action=='addUser' && !empty($_POST)){
         ]; 
     }
 
+    $playerId = $obj->add($playerData);
+    
+
 }
 
 ?>
