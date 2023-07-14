@@ -38,7 +38,8 @@ if($action=='addUser' && !empty($_POST)){
     $playerId = $obj->add($playerData);
     if(!empty($playerId)){
         $player=$obj->getRow('id',$playerId);
-    
+        echo json_encode($player);
+        exit();
     }
 
 }
