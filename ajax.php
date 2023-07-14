@@ -22,14 +22,14 @@ if($action=='addUser' && !empty($_POST)){
     if(!empty($photo['name'])){
         $imageName = $obj->uploadPhoto($photo);
         $playerData = [
-            'pname'=>$pname,
+            'name'=>$pname,
             'email'=>$email,
             'mobile'=>$mobile,
             'photo'=>$imageName,
         ];
     }else{
         $playerData = [
-            'pname'=>$pname,
+            'name'=>$pname,
             'email'=>$email,
             'mobile'=>$mobile,
         ]; 
