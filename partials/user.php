@@ -37,7 +37,7 @@ class User extends Database {
         $stmt->execute();
         if($stmt->rowCount() > 0){
             $results=$stmt->fetchAll(PDO::FETCH_ASSOC);
-        } else {
+        }else{
             $results=[];
         }
         return $results;
@@ -50,7 +50,7 @@ class User extends Database {
         $stmt->execute();
         if($stmt->rowCount() > 0){
             $result=$stmt->fetch(PDO::FETCH_ASSOC);
-        } else {
+        }else{
             $result=[];
         }
         return $result;
