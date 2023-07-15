@@ -35,7 +35,7 @@ class User extends Database {
         $sql = "SELECT * FROM {$this->tableName} ORDER BY name DESC LIMIT {$start},{$limit}";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
-        if($stmt->rowCount() > 0){
+        if($stmt->rowCount()>0){
             $results=$stmt->fetchAll(PDO::FETCH_ASSOC);
         }else{
             $results=[];
@@ -48,7 +48,7 @@ class User extends Database {
         $sql = "SELECT * FROM {$this->tableName} WHERE {$field}=:{$field}";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
-        if($stmt->rowCount() > 0){
+        if($stmt->rowCount()>0){
             $result=$stmt->fetch(PDO::FETCH_ASSOC);
         }else{
             $result=[];
