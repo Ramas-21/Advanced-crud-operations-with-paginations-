@@ -19,8 +19,7 @@ $(document).ready(function(){
             error:function(request,error){
                 console.log(arguments);
                 console.log("Error"+ error);
-            }
-
-        })
-    })
-})
+            },
+        });
+    });
+});
