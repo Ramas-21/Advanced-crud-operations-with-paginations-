@@ -10,13 +10,13 @@ if(!empty($action)){
     $obj= new User();
 }
 // adding user action
-if($action=='addUser' && !empty($_POST)){
+if($action =='addUser' && !empty($_POST)){
     $pname = $_POST['username'];
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];
     $photo = $_POST['photo'];
 
-    $playerId = (!empty($_POST['userId']))? $_POST['userId']: "";
+    $playerId = (!empty($_POST['userId']))? $_POST['userId'] : '';
 
     $imageName = "";
     if(!empty($photo['name'])){
