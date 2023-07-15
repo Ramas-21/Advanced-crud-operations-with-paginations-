@@ -2,7 +2,7 @@
 require_once 'connect.php';
 
 class User extends Database {
-    protected $tableName="userTable";
+    protected $tableName="usertable";
 
     // function to add users
     public function add($data){
