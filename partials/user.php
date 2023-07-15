@@ -9,7 +9,7 @@ class User extends Database {
         if(!empty($data)){
             $fields=$placeholder=[];
             foreach($data as $field =>$value){
-                $fields[]=$field;
+                $fileds[]=$field;
                 $placeholder[]=":{$field}";
             }
         }
