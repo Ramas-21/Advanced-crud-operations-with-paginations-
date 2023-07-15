@@ -8,8 +8,8 @@ class User extends Database {
     public function add($data){
         if(!empty($data)){
             $fields=$placeholder=[];
-            foreach($data as $field =>$value){
-                $fileds[]=$field;
+            foreach($data as $field => $value){
+                $fileds[] = $field;
                 $placeholder[]=":{$field}";
             }
         }
@@ -44,7 +44,7 @@ class User extends Database {
     }
 
     // function to get single row
-    public function getRow($field,$value){
+    public function getRow($field, $value){
         $sql = "SELECT * FROM {$this->tableName} WHERE {$field}=:{$field}";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
