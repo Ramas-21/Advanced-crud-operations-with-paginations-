@@ -10,7 +10,7 @@ class User extends Database {
             $fields=$placeholder=[];
             foreach($data as $field => $value){
                 $fileds[] = $field;
-                $placeholder[]=":{$field}";
+                $placeholder[] = ":{$field}";
             }
         }
         // $sql="INSERT INTO {$this->tableName} (pname,email,phone) VALUES(:pname,:email,:phone)";
