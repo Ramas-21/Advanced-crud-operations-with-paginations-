@@ -47,6 +47,7 @@ class User extends Database {
     public function getRow($field, $value){
         $sql = "SELECT * FROM {$this->tableName} WHERE {$field}=:{$field}";
         $stmt = $this->conn->prepare($sql);
+        $stmt->bindValue(":{$field}", $value);
         $stmt->execute();
         if($stmt->rowCount()>0){
             $result=$stmt->fetch(PDO::FETCH_ASSOC);
