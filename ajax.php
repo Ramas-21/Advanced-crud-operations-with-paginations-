@@ -41,7 +41,6 @@ if($action =='addUser' && !empty($_POST)){
         echo json_encode($player);
         exit();
     }
-
 }
 
 ?>

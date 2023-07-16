@@ -87,4 +87,3 @@ class User extends Database {
         }
     }
 }
-?>
