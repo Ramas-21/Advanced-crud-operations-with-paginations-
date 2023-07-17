@@ -7,14 +7,14 @@ class User extends Database {
     // function to add users
     public function add($data){
         if(!empty($data)){
-            $fileds=$placeholders=[];
+            $fileds = $placholders = [];
             foreach($data as $field => $value){
                 $fileds[] = $field;
-                $placeholders[] = ":{$field}";
+                $placholders[] = ":{$field}";
             }
         }
         // $sql="INSERT INTO {$this->tableName} (pname,email,phone) VALUES(:pname,:email,:phone)";
-        $sql="INSERT INTO {$this->tableName} (". implode(',', $fileds).") VALUES (". implode(',',$placeholders).")";
+        $sql="INSERT INTO {$this->tableName} (". implode(',', $fileds).") VALUES (". implode(',',$placholders) . ")";
 
         // SQL INJECTIONS
         $stmt = $this->conn->prepare($sql);
